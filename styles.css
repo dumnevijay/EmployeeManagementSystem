@@ -1,0 +1,195 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #9da832;
+    padding: 1rem;
+    color: rgb(12, 34, 230);
+}
+
+.logo img {
+    height: 100px;
+    color: black;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.search-container {
+    margin-bottom: 1rem;
+}
+
+#searchInput {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    width: 270px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    
+    .header-right {
+        width: 100%;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #3498db;
+        width: 200px;
+        padding: 1rem;
+    }
+    
+    .nav-menu.active {
+        display: block;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+    }
+    
+    .search-container {
+        width: 100%;
+    }
+    
+    #searchInput {
+        width: 100%;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
