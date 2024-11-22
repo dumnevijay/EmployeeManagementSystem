@@ -18,7 +18,7 @@ A responsive web application for managing employee records without using any Jav
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/employee-management-app.git
+git clone https://github.com/dumnevijay/EmployeeManagementSystem.git
 ```
 
 ### 2. Navigate to Project Directory
